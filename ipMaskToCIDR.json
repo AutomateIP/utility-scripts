@@ -1,0 +1,14 @@
+{
+  "properties": {
+    "ipAddress": {
+      "type": "string"
+    },
+    "netmask": {
+      "type": "string"
+    }
+  },
+  "script_argument_order": [
+    "ipAddress",
+    "netmask"
+  ]
+}
