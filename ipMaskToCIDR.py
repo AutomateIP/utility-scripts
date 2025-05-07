@@ -13,4 +13,4 @@ if __name__ == "__main__":
 
     cidr = netmask_to_cidr(args.netmask)
 
-    print(f"{args.ipAddress}/{cidr}")
+    print(f"{args.ipAddress}/{cidr}", end = "")
