@@ -7,8 +7,8 @@ def netmask_to_cidr(netmask):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Convert IP and subnet mask to CIDR notation")
-    parser.add_argument("ipAddress", help="IP address to convert to CIDR." )
-    parser.add_argument("netmask", help="Subnet mask in dotted decimal format (e.g., 255.255.255.0)")
+    parser.add_argument("--ipAddress", required = True, help="IP address to convert to CIDR." )
+    parser.add_argument("--netmask", required = True, help="Subnet mask in dotted decimal format (e.g., 255.255.255.0)")
     
 
     args = parser.parse_args()

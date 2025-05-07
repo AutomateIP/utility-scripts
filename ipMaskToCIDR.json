@@ -1,4 +1,6 @@
 {
+  "$id": "ipMaskToCIDR",
+  "$schema": "https://json-schema.org/draft/202012/schema",
   "properties": {
     "ipAddress": {
       "type": "string"
@@ -8,6 +10,10 @@
     }
   },
   "script_argument_order": [
+    "ipAddress",
+    "netmask"
+  ],
+  "required": [
     "ipAddress",
     "netmask"
   ]
