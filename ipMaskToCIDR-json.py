@@ -18,6 +18,6 @@ if __name__ == "__main__":
     cidrObject = {}
     cidrObject["ip"] = args.ipAddress
     cidrObject["netmask"] = args.netmask
-    cidrObject["cidrIp"] = cidr
+    cidrObject["cidrIp"] = args.ipAddress + "/" + cidr
 
     print(json.dumps(cidrObject))
