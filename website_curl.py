@@ -37,7 +37,7 @@ def main():
     """
     # Create an argument parser.
     parser = argparse.ArgumentParser(description="Check website reachability using curl.")
-    parser.add_argument("url", help="The URL of the website to check.")
+    parser.add_argument("--url", help="The URL of the website to check.")
     args = parser.parse_args()
     url = args.url
 
