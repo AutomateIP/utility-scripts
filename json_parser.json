@@ -5,14 +5,8 @@
   "type": "object",
   "properties": {
     "text": {
-      "type": "string",
-      "description": "A string argument that can be either valid JSON or plain text. If valid JSON, it will be parsed and pretty-printed. If not, the original string will be displayed.",
-      "examples": [
-        "{\"name\": \"John\", \"age\": 30}",
-        "Hello, World!",
-        "[1, 2, 3, 4, 5]",
-        "{\"users\": [{\"id\": 1, \"name\": \"Alice\"}, {\"id\": 2, \"name\": \"Bob\"}]}"
-      ]
+      "type": "object",
+      "description": "A string argument that can be either valid JSON or plain text. If valid JSON, it will be parsed and pretty-printed. If not, the original string will be displayed."
     }
   },
   "required": ["text"],
