@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "JSON Parser Script Input Schema",
+  "description": "Schema defining the input argument for json_parser.py script",
+  "type": "object",
+  "properties": {
+    "text": {
+      "type": "string",
+      "description": "A string argument that can be either valid JSON or plain text. If valid JSON, it will be parsed and pretty-printed. If not, the original string will be displayed.",
+      "examples": [
+        "{\"name\": \"John\", \"age\": 30}",
+        "Hello, World!",
+        "[1, 2, 3, 4, 5]",
+        "{\"users\": [{\"id\": 1, \"name\": \"Alice\"}, {\"id\": 2, \"name\": \"Bob\"}]}"
+      ]
+    }
+  },
+  "required": ["text"],
+  "additionalProperties": false
+}
