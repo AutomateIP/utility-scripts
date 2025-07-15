@@ -25,10 +25,15 @@ def main():
     # Parse the arguments
     args = parser.parse_args()
     
+    # Get the text, removing --text= prefix if present
+    text_input = args.text
+    if text_input.startswith('--text='):
+        text_input = text_input[7:]  # Remove '--text=' prefix
+    
     # Try to parse as JSON
     try:
         # Attempt to parse the input as JSON
-        parsed_json = json.loads(args.text)
+        parsed_json = json.loads(text_input)
         
         # If successful, print the formatted JSON
         print("Valid JSON detected. Parsed output:")
@@ -37,7 +42,7 @@ def main():
     except json.JSONDecodeError:
         # If it's not valid JSON, print the original string
         print("Not valid JSON. Original string:")
-        print(args.text)
+        print(text_input)
 
 
 if __name__ == '__main__':
