@@ -36,7 +36,6 @@ def main():
         parsed_json = json.loads(text_input)
         
         # If successful, print the formatted JSON
-        print("Valid JSON detected. Parsed output:")
         print(json.dumps(parsed_json, indent=2))
         
     except json.JSONDecodeError:
