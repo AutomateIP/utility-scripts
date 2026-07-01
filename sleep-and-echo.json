@@ -1,0 +1,15 @@
+{
+  "$id": "root",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "properties": {
+    "seconds": {
+      "description": "Number of seconds to sleep",
+      "type": "string"
+    }
+  },
+  "required": [
+    "seconds"
+  ],
+  "type": "object"
+}
